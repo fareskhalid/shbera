@@ -54,7 +54,25 @@ return [
     'form_message' => 'الرسالة *',
     'form_message_placeholder' => 'رسالتك هنا...',
     'form_send' => 'إرسال الرسالة',
+    'form_name_required' => 'الاسم الكامل مطلوب',
+    'form_email_required' => 'عنوان البريد الإلكتروني مطلوب',
+    'form_email_invalid' => 'يرجى إدخال عنوان بريد إلكتروني صحيح',
+    'form_subject_required' => 'الموضوع مطلوب',
+    'form_message_required' => 'الرسالة مطلوبة',
     'cairo_egypt' => 'التجمع الأول، القاهرة الجديدة، مصر',
+    
+    // Contact Form Submission
+    'message_sent_success' => 'شكراً لك على رسالتك! سنرد عليك قريباً.',
+    'message_sent_error' => 'حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة لاحقاً.',
+    
+    // Email Template
+    'new_contact_submission' => 'رسالة جديدة من نموذج الاتصال',
+    'contact_form_received' => 'تم استلام رسالة جديدة من خلال نموذج الاتصال الخاص بك:',
+    'name' => 'الاسم',
+    'not_provided' => 'لم يتم توفيره',
+    'subject' => 'الموضوع',
+    'message' => 'الرسالة',
+    'email_footer' => 'تم إرسال هذه الرسالة من خلال نموذج الاتصال الخاص بموقعك.',
 
     // Footer
     'all_rights_reserved' => 'جميع الحقوق محفوظة',

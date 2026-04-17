@@ -54,7 +54,25 @@ return [
     'form_message' => 'Message *',
     'form_message_placeholder' => 'Your message here...',
     'form_send' => 'Send Message',
+    'form_name_required' => 'Full name is required',
+    'form_email_required' => 'Email address is required',
+    'form_email_invalid' => 'Please enter a valid email address',
+    'form_subject_required' => 'Subject is required',
+    'form_message_required' => 'Message is required',
     'cairo_egypt' => 'El Tagamoa El Awwal, New Cairo, Egypt',
+    
+    // Contact Form Submission
+    'message_sent_success' => 'Thank you for your message! We\'ll get back to you shortly.',
+    'message_sent_error' => 'There was an error sending your message. Please try again later.',
+    
+    // Email Template
+    'new_contact_submission' => 'New Contact Form Submission',
+    'contact_form_received' => 'A new message has been received through your contact form:',
+    'name' => 'Name',
+    'not_provided' => 'Not provided',
+    'subject' => 'Subject',
+    'message' => 'Message',
+    'email_footer' => 'This message was sent via your website contact form.',
 
     // Footer
     'all_rights_reserved' => 'All rights reserved',
