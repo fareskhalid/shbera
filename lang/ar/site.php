@@ -43,13 +43,6 @@ return [
     'address' => 'العنوان',
     'phone' => 'الهاتف',
     'email' => 'البريد الإلكتروني',
-    'business_hours' => 'ساعات العمل',
-    'monday_friday' => 'الاثنين - الجمعة:',
-    'saturday' => 'السبت:',
-    'sunday' => 'الأحد:',
-    'hours_weekday' => '٨:٠٠ صباحاً - ٦:٠٠ مساءً',
-    'hours_saturday' => '٩:٠٠ صباحاً - ٢:٠٠ مساءً',
-    'hours_closed' => 'مغلق',
     'form_name' => 'الاسم الكامل *',
     'form_name_placeholder' => 'اسمك',
     'form_email' => 'عنوان البريد الإلكتروني *',
@@ -61,7 +54,8 @@ return [
     'form_message' => 'الرسالة *',
     'form_message_placeholder' => 'رسالتك هنا...',
     'form_send' => 'إرسال الرسالة',
-    'our_location' => 'موقعنا',
-    'location_coming' => 'سيتم إضافة خريطة قريباً',
-    'cairo_egypt' => 'القاهرة، مصر',
+    'cairo_egypt' => 'التجمع الأول، القاهرة الجديدة، مصر',
+
+    // Footer
+    'all_rights_reserved' => 'جميع الحقوق محفوظة',
 ];

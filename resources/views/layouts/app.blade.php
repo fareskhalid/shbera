@@ -65,11 +65,11 @@
                 <h4>{{ __('site.contact') }}</h4>
                 <p><i class="bi bi-envelope"></i> <a href="mailto:info@shbera.com" style="color: rgba(255,255,255,.6); text-decoration: none;">info@shbera.com</a></p>
                 <p><i class="bi bi-telephone"></i> +201152525064</p>
-                <p><i class="bi bi-geo-alt"></i> Cairo, Egypt</p>
+                <p><i class="bi bi-geo-alt"></i> El Tagamoa El Awwal, New Cairo, Egypt</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© {{ date('Y') }} {{ __('site.company') }}. All rights reserved.</p>
+            <p>© {{ date('Y') }} {{ __('site.company') }}. {{ __('site.all_rights_reserved') }}.</p>
         </div>
     </footer>
 

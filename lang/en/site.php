@@ -43,13 +43,6 @@ return [
     'address' => 'Address',
     'phone' => 'Phone',
     'email' => 'Email',
-    'business_hours' => 'Business Hours',
-    'monday_friday' => 'Monday - Friday:',
-    'saturday' => 'Saturday:',
-    'sunday' => 'Sunday:',
-    'hours_weekday' => '8:00 AM - 6:00 PM',
-    'hours_saturday' => '9:00 AM - 2:00 PM',
-    'hours_closed' => 'Closed',
     'form_name' => 'Full Name *',
     'form_name_placeholder' => 'Your name',
     'form_email' => 'Email Address *',
@@ -61,7 +54,8 @@ return [
     'form_message' => 'Message *',
     'form_message_placeholder' => 'Your message here...',
     'form_send' => 'Send Message',
-    'our_location' => 'Our Location',
-    'location_coming' => 'Map integration coming soon',
-    'cairo_egypt' => 'Cairo, Egypt',
+    'cairo_egypt' => 'El Tagamoa El Awwal, New Cairo, Egypt',
+
+    // Footer
+    'all_rights_reserved' => 'All rights reserved',
 ];

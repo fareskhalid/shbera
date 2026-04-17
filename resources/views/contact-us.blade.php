@@ -29,7 +29,7 @@
                 <div style="background: var(--light); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
                     <h3 style="color: var(--navy); font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem;">{{ __('site.contact_info') }}</h3>
                     
-                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start;">
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start;" class="rtl-flex">
                         <i class="bi bi-geo-alt" style="color: var(--gold); font-size: 1.5rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
                         <div>
                             <h4 style="color: var(--navy); font-weight: 600; margin-bottom: 0.3rem;">{{ __('site.address') }}</h4>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
 
-                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start;">
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start;" class="rtl-flex">
                         <i class="bi bi-telephone" style="color: var(--gold); font-size: 1.5rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
                         <div>
                             <h4 style="color: var(--navy); font-weight: 600; margin-bottom: 0.3rem;">{{ __('site.phone') }}</h4>
@@ -45,29 +45,12 @@
                         </div>
                     </div>
 
-                    <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div style="display: flex; gap: 1rem; align-items: flex-start;" class="rtl-flex">
                         <i class="bi bi-envelope" style="color: var(--gold); font-size: 1.5rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
                         <div>
                             <h4 style="color: var(--navy); font-weight: 600; margin-bottom: 0.3rem;">{{ __('site.email') }}</h4>
                             <p style="color: var(--gray); font-size: .9rem;"><a href="mailto:info@shbera.com" style="color: var(--gold); text-decoration: none;">info@shbera.com</a></p>
                         </div>
-                    </div>
-                </div>
-
-                {{-- BUSINESS HOURS --}}
-                <div style="background: var(--light); padding: 2rem; border-radius: 8px;">
-                    <h3 style="color: var(--navy); font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem;">{{ __('site.business_hours') }}</h3>
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.8rem;">
-                        <span style="color: var(--gray);">{{ __('site.monday_friday') }}</span>
-                        <span style="color: var(--navy); font-weight: 600;">{{ __('site.hours_weekday') }}</span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.8rem;">
-                        <span style="color: var(--gray);">{{ __('site.saturday') }}</span>
-                        <span style="color: var(--navy); font-weight: 600;">{{ __('site.hours_saturday') }}</span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between;">
-                        <span style="color: var(--gray);">{{ __('site.sunday') }}</span>
-                        <span style="color: var(--navy); font-weight: 600;">{{ __('site.hours_closed') }}</span>
                     </div>
                 </div>
             </div>
@@ -107,18 +90,6 @@
                     </button>
                 </form>
             </div>
-        </div>
-    </div>
-</section>
-
-{{-- MAP SECTION (Optional) --}}
-<section style="padding: 4rem 2rem; background: var(--white); border-top: 2px solid var(--gold);">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        <div style="text-align: center; margin-bottom: 2rem;">
-            <h2 style="font-size: 1.8rem; font-weight: 800; color: var(--navy);">{{ __('site.our_location') }}</h2>
-        </div>
-        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.1); height: 400px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: var(--gray);">
-            <p>{{ __('site.location_coming') }}</p>
         </div>
     </div>
 </section>
