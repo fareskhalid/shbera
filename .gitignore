@@ -1,0 +1,99 @@
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/logs/*.log
+/vendor
+.env
+.env.backup
+.env.production
+.env.production.backup
+.env.local
+.env.*.local
+.phpunit.result.cache
+.phpstan.cache
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.fleet/
+.sublime-project
+.sublime-workspace
+*.sublime-project
+*.sublime-workspace
+
+# System files
+Thumbs.db
+.env.*.php
+*.pem
+
+# Composer
+composer.lock
+auth.json
+
+# Node & npm
+package-lock.json
+yarn.lock
+npm-debug.log
+npm-debug.log.*
+yarn-error.log
+yarn-error.log.*
+pnpm-lock.yaml
+lerna-debug.log
+
+# Testing
+/.pest/
+coverage/
+.coverage
+.phpunit.result.cache
+
+# Laravel Specific
+Homestead.json
+Homestead.yaml
+.rnd
+.env.*.cache
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+storage/framework/cache/*
+!storage/framework/cache/.gitignore
+storage/framework/sessions/*
+!storage/framework/sessions/.gitignore
+storage/framework/views/*
+!storage/framework/views/.gitignore
+storage/logs/*
+!storage/logs/.gitignore
+storage/app/public/*
+!storage/app/public/.gitignore
+
+# Application Specific
+database/*.sqlite
+database/*.sqlite-journal
+database/database.sqlite
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+tmp/
+
+# Local development
+.local.env
+local.env
+.vscode-settings.json
+
+# Build output
+dist/
+build/
+out/
+
+# Archives
+*.zip
+*.rar
+*.tar.gz
+*.7z
