@@ -36,13 +36,10 @@ Thumbs.db
 auth.json
 
 # Node & npm
-package-lock.json
-yarn.lock
 npm-debug.log
 npm-debug.log.*
 yarn-error.log
 yarn-error.log.*
-pnpm-lock.yaml
 lerna-debug.log
 
 # Testing
