@@ -56,7 +56,7 @@
                 <p>{{ __('site.tagline') }}</p>
             </div>
             <div class="footer-links">
-                <h4>Quick Links</h4>
+                <h4>{{ __('site.quick_links') }}</h4>
                 <a href="{{ route('home') }}">{{ __('site.home') }}</a>
                 <a href="{{ route('about') }}">{{ __('site.about') }}</a>
                 <a href="{{ route('products') }}">{{ __('site.products') }}</a>

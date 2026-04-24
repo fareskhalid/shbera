@@ -19,6 +19,7 @@ return [
     'global_desc'   => 'Exporting to markets in over 30 countries worldwide',
     'reliable'      => 'Full Reliability',
     'reliable_desc' => 'Long-term partnerships built on trust and professionalism',
+    'quick_links'   => 'Quick Links',
     
     // About Us Page
     'about_heading' => 'About Us — A Global Leader in Chemical & Petrochemical Exports',
