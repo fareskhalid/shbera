@@ -1,0 +1,81 @@
+name: Deploy to Staging
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  deploy:
+    # Run for direct pushes to staging OR when a PR to main is closed and merged
+    if: >
+      github.event_name == 'push' ||
+      (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Setup SSH key
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
+
+      # 3. Add remote host to known_hosts
+      - name: Add remote host to known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          ssh-keyscan -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      # 4. Upload source code to server
+      - name: Rsync source to server
+        run: |
+          rsync -avz --delete \
+            --exclude '.git' \
+            --exclude 'node_modules' \
+            --exclude 'vendor' \
+            --exclude '.env' \
+            --exclude 'storage/logs/*' \
+            --exclude 'storage/framework/cache/*' \
+            --exclude 'storage/framework/sessions/*' \
+            --exclude 'storage/framework/views/*' \
+            ./ \
+            ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/home/fareskhalid/domains/shbera.com/public_html/
+
+      # 5. SSH into server and deploy Laravel application
+      - name: Deploy Laravel on server
+        run: |
+          ssh ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << 'EOF'
+            cd /home/fareskhalid/domains/shbera.com/public_html/
+
+            # Install PHP dependencies
+            composer install --no-dev --optimize-autoloader --no-interaction
+
+            # Set proper permissions
+            chmod -R 775 storage bootstrap/cache
+
+            # Run Laravel optimizations
+            php artisan config:cache
+
+            # Run database migrations
+            php artisan migrate --force
+
+            # Clear and cache everything
+            php artisan optimize:clear
+            php artisan optimize
+
+            # Clear route cache
+            php artisan route:clear
+
+            # Restart queue workers if you use them
+            php artisan queue:restart
+
+            # Set proper ownership (adjust user:group as needed)
+            # chown -R www-data:www-data storage bootstrap/cache
+          EOF
