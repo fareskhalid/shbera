@@ -33,8 +33,6 @@ Thumbs.db
 .env.*.php
 *.pem
 
-# Composer
-composer.lock
 auth.json
 
 # Node & npm
