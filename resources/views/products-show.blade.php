@@ -38,7 +38,7 @@
             <div class="product-detail-info">
                 <h2>{{ $product->name }}</h2>
                 <div class="product-description">
-                    <p>{{ $product->description }}</p>
+                    <p>{{ Str::limit($product->description, 150) }}@if(Str::length($product->description) > 150)...@endif</p>
                 </div>
 
                 <div class="product-actions">
