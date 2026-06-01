@@ -17,12 +17,6 @@
     <div class="hero-scroll"><i class="bi bi-chevron-double-down"></i></div>
 </section>
 
-{{-- STATS STRIP --}}
-<section class="stats-strip">
-    <div class="stat-item"><span class="stat-num">30+</span><span class="stat-label">{{ app()->getLocale() === 'ar' ? 'دولة مُصدِّر إليها' : 'Export Countries' }}</span></div>
-    <div class="stat-item"><span class="stat-num">120+</span><span class="stat-label">{{ app()->getLocale() === 'ar' ? 'عميل راضٍ' : 'Satisfied Clients' }}</span></div>
-</section>
-
 {{-- FEATURED PRODUCTS --}}
 @if($featuredProducts->count())
 <section class="section-products">
@@ -39,7 +33,7 @@
             </div>
             <div class="product-info">
                 <h3>{{ $product->name }}</h3>
-                <p>{{ Str::limit($product->description, 100) }}</p>
+                <p>{{ Str::limit($product->description, 150) }}@if(Str::length($product->description) > 150)...@endif</p>
             </div>
         </div>
         @endforeach
