@@ -76,6 +76,33 @@ return [
     'message' => 'الرسالة',
     'email_footer' => 'تم إرسال هذه الرسالة من خلال نموذج الاتصال الخاص بموقعك.',
 
+    // Product Details & Order Form
+    'order_product' => 'اطلب هذا المنتج',
+    'back_to_products' => 'العودة إلى المنتجات',
+    'order_form_title' => 'نموذج الطلب',
+    'quantity' => 'الكمية',
+    'quantity_required' => 'الكمية مطلوبة',
+    'quantity_min' => 'يجب أن تكون الكمية 1 على الأقل',
+    'company_name' => 'اسم الشركة',
+    'special_requests' => 'طلبات خاصة / ملاحظات إضافية',
+    'cancel' => 'إلغاء',
+    'submit_order' => 'تقديم الطلب',
+    'order_sent_success' => 'شكراً لك على طلبك! سيتصل بك فريقنا قريباً لتأكيد التفاصيل.',
+    'order_sent_error' => 'حدث خطأ أثناء تقديم الطلب. يرجى المحاولة لاحقاً.',
+
+    // Order Email Template
+    'new_order_submission' => 'طلب منتج جديد',
+    'order_form_received' => 'تم استلام طلب منتج جديد:',
+    'product' => 'المنتج',
+    'order_details' => 'تفاصيل الطلب',
+
     // Footer
     'all_rights_reserved' => 'جميع الحقوق محفوظة',
+
+    // Additional Translations
+    'featured_products' => 'منتجاتنا المميزة',
+    'view_product' => 'عرض المنتج',
+    'no_products_available' => 'لا توجد منتجات حتى الآن',
+    'language_en' => 'EN',
+    'language_ar' => 'العربية',
 ];

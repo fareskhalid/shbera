@@ -7,6 +7,8 @@ use App\Http\Controllers\Dashboard\ProductController;
 // Public routes
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/products', [PageController::class, 'products'])->name('products');
+Route::get('/products/{product}', [PageController::class, 'show'])->name('products.show');
+Route::post('/products/{product}/order', [PageController::class, 'order'])->name('products.order');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::post('/contact', [PageController::class, 'sendContactMessage'])->name('contact.send');

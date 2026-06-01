@@ -57,7 +57,7 @@ jobs:
             cd /home/fareskhalid/domains/shbera.com/public_html/
 
             # Install PHP dependencies
-            composer install --no-dev --optimize-autoloader --no-interaction
+            /usr/local/bin/php84 /usr/local/bin/composer install --no-dev --optimize-autoloader --no-interaction
 
             # Install Node.js dependencies and build assets
             npm install
@@ -67,23 +67,23 @@ jobs:
             chmod -R 775 storage bootstrap/cache
 
             # Run Laravel optimizations
-            php artisan config:cache
+            /usr/local/bin/php84 artisan config:cache
 
             # Run database migrations
-            php artisan migrate --force
-
-            # Link storage
-            php artisan storage:link
+            /usr/local/bin/php84 artisan migrate --force
 
             # Clear and cache everything
-            php artisan optimize:clear
-            php artisan optimize
+            /usr/local/bin/php84 artisan optimize:clear
+            /usr/local/bin/php84 artisan optimize
 
             # Clear route cache
-            php artisan route:clear
+            /usr/local/bin/php84 artisan route:clear
 
             # Restart queue workers if you use them
-            php artisan queue:restart
+            /usr/local/bin/php84 artisan queue:restart
+
+            # Link storage
+            /usr/local/bin/php84 artisan storage:link
 
             # Set proper ownership (adjust user:group as needed)
             # chown -R www-data:www-data storage bootstrap/cache

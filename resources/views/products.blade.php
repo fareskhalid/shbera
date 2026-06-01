@@ -15,21 +15,34 @@
     <div class="products-grid large">
         @forelse($products as $product)
         <div class="product-card">
-            <div class="product-img">
-                <img src="{{ $product->thumbnail_url }}" alt="{{ $product->name }}">
-                <div class="product-overlay"></div>
-            </div>
-            <div class="product-info">
-                <h3>{{ $product->name }}</h3>
-                <p>{{ $product->description }}</p>
+            <a href="{{ route('products.show', $product->id) }}" class="product-link">
+                <div class="product-img">
+                    <img src="{{ $product->thumbnail_url }}" alt="{{ $product->name }}">
+                    <div class="product-overlay"></div>
+                </div>
+                <div class="product-info">
+                    <h3>{{ $product->name }}</h3>
+                    <p>{{ $product->description }}</p>
+                </div>
+            </a>
+            <div class="p-4 border-t border-gray-200 flex justify-center">
+                <a href="{{ route('products.show', $product->id) }}" class="inline-flex items-center gap-2 px-6 py-2 bg-yellow-600 text-white font-semibold rounded hover:bg-yellow-500 transition-all duration-200">
+                    <i class="bi bi-eye"></i>
+                    {{ __('site.view_product') }}
+                </a>
             </div>
         </div>
         @empty
         <div class="empty-state">
             <i class="bi bi-box-seam"></i>
-            <p>{{ app()->getLocale() === 'ar' ? 'لا توجد منتجات حتى الآن' : 'No products yet.' }}</p>
+            <p>{{ __('site.no_products_available') }}</p>
         </div>
         @endforelse
+    </div>
+
+    {{-- Pagination Links --}}
+    <div class="pagination-container">
+        {{ $products->links() }}
     </div>
 </section>
 @endsection

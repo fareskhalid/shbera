@@ -30,7 +30,7 @@
             </ul>
             <div class="nav-actions">
                 <a href="{{ route('locale', app()->getLocale() === 'ar' ? 'en' : 'ar') }}" class="lang-toggle">
-                    {{ app()->getLocale() === 'ar' ? 'EN' : 'العربية' }}
+                    {{ __('site.language_' . (app()->getLocale() === 'ar' ? 'en' : 'ar')) }}
                 </a>
                 <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="bi bi-list"></i></button>
             </div>
@@ -41,7 +41,7 @@
             <a href="{{ route('about') }}">{{ __('site.about') }}</a>
             <a href="{{ route('contact') }}">{{ __('site.contact') }}</a>
             @auth <a href="{{ route('dashboard.products.index') }}">{{ __('site.dashboard') }}</a> @endauth
-            <a href="{{ route('locale', app()->getLocale() === 'ar' ? 'en' : 'ar') }}">{{ app()->getLocale() === 'ar' ? 'EN' : 'العربية' }}</a>
+            <a href="{{ route('locale', app()->getLocale() === 'ar' ? 'en' : 'ar') }}">{{ __('site.language_' . (app()->getLocale() === 'ar' ? 'en' : 'ar')) }}</a>
         </div>
     </nav>
 
