@@ -41,12 +41,12 @@
             <div>
                 <div style="background: var(--light); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
                     <h3 style="color: var(--navy); font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem;">{{ __('site.contact_info') }}</h3>
-                    
+
                     <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start;" class="rtl-flex">
                         <i class="bi bi-geo-alt" style="color: var(--gold); font-size: 1.5rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
                         <div>
                             <h4 style="color: var(--navy); font-weight: 600; margin-bottom: 0.3rem;">{{ __('site.address') }}</h4>
-                            <p style="color: var(--gray); font-size: .9rem; line-height: 1.6;">{{ __('site.cairo_egypt') }}</p>
+                            <p style="color: var(--gray); font-size: .9rem; line-height: 1.6;">{{ __('site.comp_address') }}</p>
                         </div>
                     </div>
 

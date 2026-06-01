@@ -20,9 +20,7 @@
 {{-- STATS STRIP --}}
 <section class="stats-strip">
     <div class="stat-item"><span class="stat-num">30+</span><span class="stat-label">{{ app()->getLocale() === 'ar' ? 'دولة مُصدِّر إليها' : 'Export Countries' }}</span></div>
-    <div class="stat-item"><span class="stat-num">15+</span><span class="stat-label">{{ app()->getLocale() === 'ar' ? 'سنة خبرة' : 'Years Experience' }}</span></div>
-    <div class="stat-item"><span class="stat-num">500+</span><span class="stat-label">{{ app()->getLocale() === 'ar' ? 'عميل راضٍ' : 'Satisfied Clients' }}</span></div>
-    <div class="stat-item"><span class="stat-num">50+</span><span class="stat-label">{{ app()->getLocale() === 'ar' ? 'منتج متاح' : 'Products Available' }}</span></div>
+    <div class="stat-item"><span class="stat-num">120+</span><span class="stat-label">{{ app()->getLocale() === 'ar' ? 'عميل راضٍ' : 'Satisfied Clients' }}</span></div>
 </section>
 
 {{-- FEATURED PRODUCTS --}}

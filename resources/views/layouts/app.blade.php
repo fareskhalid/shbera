@@ -64,8 +64,8 @@
             <div class="footer-contact">
                 <h4>{{ __('site.contact') }}</h4>
                 <p><i class="bi bi-envelope"></i> <a href="mailto:info@shbera.com" style="color: rgba(255,255,255,.6); text-decoration: none;">info@shbera.com</a></p>
-                <p><i class="bi bi-telephone"></i> +201152525064</p>
-                <p><i class="bi bi-geo-alt"></i> El Tagamoa El Awwal, New Cairo, Egypt</p>
+                <p><i class="bi bi-telephone"></i> 201152525064</p>
+                <p><i class="bi bi-geo-alt"></i> {{ __('site.comp_address') }}</p>
             </div>
         </div>
         <div class="footer-bottom">

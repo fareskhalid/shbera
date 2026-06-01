@@ -1,6 +1,7 @@
 <?php
 return [
     'company'       => 'Shbera',
+    'comp_address'  => 'El Tagamoa El Awwal, New Cairo, Egypt',
     'tagline'       => 'Chemical & Petrochemical Export Leaders',
     'hero_title'    => 'Exporting World-Class Quality',
     'hero_sub'      => 'Shbera — Your trusted partner in chemical and petrochemical materials',
@@ -20,7 +21,7 @@ return [
     'reliable'      => 'Full Reliability',
     'reliable_desc' => 'Long-term partnerships built on trust and professionalism',
     'quick_links'   => 'Quick Links',
-    
+
     // About Us Page
     'about_heading' => 'About Us — A Global Leader in Chemical & Petrochemical Exports',
     'about_intro_1' => 'With over 15 years of industry expertise, Shbera has established itself as a trusted partner in the chemical and petrochemical export business. We pride ourselves on delivering premium-quality materials to clients across more than 30 countries worldwide.',
@@ -33,10 +34,10 @@ return [
     'why_choose' => 'Why Choose Shbera?',
     'quality_detail' => 'We maintain rigorous quality control processes to ensure every product meets international standards.',
     'global_detail' => 'With operations spanning 30+ countries, we offer true global reach and local expertise.',
-    'reliable_detail' => 'Our track record speaks for itself with 500+ satisfied clients and consistent service delivery.',
+    'reliable_detail' => 'Our track record speaks for itself with 120+ satisfied clients and consistent service delivery.',
     'partner_ready' => 'Ready to Partner With Us?',
     'partner_text' => 'Get in touch with our team to discuss your chemical and petrochemical needs.',
-    
+
     // Contact Us Page
     'contact_heading' => 'Get In Touch With Us',
     'contact_subheading' => 'We\'d love to hear from you. Send us a message and we\'ll respond as soon as possible.',
@@ -61,11 +62,11 @@ return [
     'form_subject_required' => 'Subject is required',
     'form_message_required' => 'Message is required',
     'cairo_egypt' => 'El Tagamoa El Awwal, New Cairo, Egypt',
-    
+
     // Contact Form Submission
     'message_sent_success' => 'Thank you for your message! We\'ll get back to you shortly.',
     'message_sent_error' => 'There was an error sending your message. Please try again later.',
-    
+
     // Email Template
     'new_contact_submission' => 'New Contact Form Submission',
     'contact_form_received' => 'A new message has been received through your contact form:',
