@@ -14,7 +14,7 @@
             <a href="{{ route('about') }}" class="btn-outline">{{ __('site.about') }}</a>
         </div>
     </div>
-    <div class="hero-scroll"><i class="bi bi-chevron-double-down"></i></div>
+    <div class="hero-scroll"><i class="fas fa-chevron-down"></i></div>
 </section>
 
 {{-- FEATURED PRODUCTS --}}
@@ -36,7 +36,7 @@
                 <p>{{ Str::limit($product->description, 150) }}@if(Str::length($product->description) > 150)...@endif</p>
                 <div class="mt-4 flex justify-center">
                     <a href="{{ route('products.show', $product->id) }}" class="inline-flex items-center gap-2 px-6 py-2 bg-yellow-600 text-white font-semibold rounded hover:bg-yellow-500 transition-all duration-200">
-                        <i class="bi bi-eye"></i>
+                        <i class="fas fa-eye"></i>
                         {{ __('site.view_product') }}
                     </a>
                 </div>
@@ -63,9 +63,9 @@
             <h2>{{ __('site.company') }}</h2>
             <p>{{ __('site.about_text') }}</p>
             <div class="features-list">
-                <div class="feature"><i class="bi bi-award"></i><div><h4>{{ __('site.quality') }}</h4><p>{{ __('site.quality_desc') }}</p></div></div>
-                <div class="feature"><i class="bi bi-globe2"></i><div><h4>{{ __('site.global') }}</h4><p>{{ __('site.global_desc') }}</p></div></div>
-                <div class="feature"><i class="bi bi-shield-check"></i><div><h4>{{ __('site.reliable') }}</h4><p>{{ __('site.reliable_desc') }}</p></div></div>
+                <div class="feature"><i class="fas fa-award"></i><div><h4>{{ __('site.quality') }}</h4><p>{{ __('site.quality_desc') }}</p></div></div>
+                <div class="feature"><i class="fas fa-globe"></i><div><h4>{{ __('site.global') }}</h4><p>{{ __('site.global_desc') }}</p></div></div>
+                <div class="feature"><i class="fas fa-shield"></i><div><h4>{{ __('site.reliable') }}</h4><p>{{ __('site.reliable_desc') }}</p></div></div>
             </div>
         </div>
     </div>

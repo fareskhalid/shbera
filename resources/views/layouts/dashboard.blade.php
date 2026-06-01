@@ -13,14 +13,14 @@
         <div class="sidebar-logo">⬡ Shbera</div>
         <nav class="sidebar-nav">
             <a href="{{ route('dashboard.products.index') }}" class="{{ request()->routeIs('dashboard.products.*') ? 'active' : '' }}">
-                <i class="bi bi-box-seam"></i> Products
+                <i class="fas fa-box"></i> Products
             </a>
-            <a href="{{ route('home') }}" target="_blank"><i class="bi bi-globe"></i> View Site</a>
+            <a href="{{ route('home') }}" target="_blank"><i class="fas fa-globe"></i> View Site</a>
         </nav>
         <div class="sidebar-footer">
             <form action="{{ route('logout') }}" method="POST">
                 @csrf
-                <button type="submit"><i class="bi bi-box-arrow-left"></i> Logout</button>
+                <button type="submit"><i class="fas fa-arrow-right-from-bracket"></i> Logout</button>
             </form>
         </div>
     </aside>

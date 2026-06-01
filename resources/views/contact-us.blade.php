@@ -43,7 +43,7 @@
                     <h3 style="color: var(--navy); font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem;">{{ __('site.contact_info') }}</h3>
 
                     <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start;" class="rtl-flex">
-                        <i class="bi bi-geo-alt" style="color: var(--gold); font-size: 1.5rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
+                        <i class="fas fa-location-dot" style="color: var(--gold); font-size: 1.5rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
                         <div>
                             <h4 style="color: var(--navy); font-weight: 600; margin-bottom: 0.3rem;">{{ __('site.address') }}</h4>
                             <p style="color: var(--gray); font-size: .9rem; line-height: 1.6;">{{ __('site.comp_address') }}</p>
@@ -51,7 +51,7 @@
                     </div>
 
                     <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start;" class="rtl-flex">
-                        <i class="bi bi-telephone" style="color: var(--gold); font-size: 1.5rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
+                        <i class="fas fa-phone" style="color: var(--gold); font-size: 1.5rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
                         <div>
                             <h4 style="color: var(--navy); font-weight: 600; margin-bottom: 0.3rem;">{{ __('site.phone') }}</h4>
                             <p style="color: var(--gray); font-size: .9rem;">+201152525064</p>
@@ -59,7 +59,7 @@
                     </div>
 
                     <div style="display: flex; gap: 1rem; align-items: flex-start;" class="rtl-flex">
-                        <i class="bi bi-envelope" style="color: var(--gold); font-size: 1.5rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
+                        <i class="fas fa-envelope" style="color: var(--gold); font-size: 1.5rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
                         <div>
                             <h4 style="color: var(--navy); font-weight: 600; margin-bottom: 0.3rem;">{{ __('site.email') }}</h4>
                             <p style="color: var(--gray); font-size: .9rem;"><a href="mailto:info@shbera.com" style="color: var(--gold); text-decoration: none;">info@shbera.com</a></p>

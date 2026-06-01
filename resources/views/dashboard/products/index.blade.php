@@ -26,10 +26,10 @@
             <td><span class="badge {{ $product->is_active ? 'badge-active' : 'badge-inactive' }}">{{ $product->is_active ? 'Active' : 'Inactive' }}</span></td>
             <td>{{ $product->sort_order }}</td>
             <td class="action-btns">
-                <a href="{{ route('dashboard.products.edit', $product) }}" class="btn-edit"><i class="bi bi-pencil"></i></a>
+                <a href="{{ route('dashboard.products.edit', $product) }}" class="btn-edit"><i class="fas fa-pencil"></i></a>
                 <form action="{{ route('dashboard.products.destroy', $product) }}" method="POST" onsubmit="return confirm('Delete this product?')">
                     @csrf @method('DELETE')
-                    <button type="submit" class="btn-delete"><i class="bi bi-trash"></i></button>
+                    <button type="submit" class="btn-delete"><i class="fas fa-trash"></i></button>
                 </form>
             </td>
         </tr>

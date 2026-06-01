@@ -22,19 +22,19 @@
                 </div>
                 <div class="product-info">
                     <h3>{{ $product->name }}</h3>
-                    <p>{{ $product->description }}</p>
+                    <p>{{ Str::limit($product->description, 150) }}@if(Str::length($product->description) > 150)...@endif</p>
                 </div>
             </a>
             <div class="p-4 border-t border-gray-200 flex justify-center">
                 <a href="{{ route('products.show', $product->id) }}" class="inline-flex items-center gap-2 px-6 py-2 bg-yellow-600 text-white font-semibold rounded hover:bg-yellow-500 transition-all duration-200">
-                    <i class="bi bi-eye"></i>
+                    <i class="fas fa-eye"></i>
                     {{ __('site.view_product') }}
                 </a>
             </div>
         </div>
         @empty
         <div class="empty-state">
-            <i class="bi bi-box-seam"></i>
+            <i class="fas fa-box"></i>
             <p>{{ __('site.no_products_available') }}</p>
         </div>
         @endforelse

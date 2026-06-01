@@ -49,7 +49,7 @@
         <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem;">
             <div style="background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,.06);">
                 <h3 style="color: var(--navy); font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem;">
-                    <i class="bi bi-target" style="color: var(--gold); margin-inline-end: 0.5rem;"></i>
+                    <i class="fas fa-bullseye" style="color: var(--gold); margin-inline-end: 0.5rem;"></i>
                     {{ __('site.mission') }}
                 </h3>
                 <p style="color: var(--gray); line-height: 1.8;">
@@ -58,7 +58,7 @@
             </div>
             <div style="background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,.06);">
                 <h3 style="color: var(--navy); font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem;">
-                    <i class="bi bi-star" style="color: var(--gold); margin-inline-end: 0.5rem;"></i>
+                    <i class="fas fa-star" style="color: var(--gold); margin-inline-end: 0.5rem;"></i>
                     {{ __('site.vision') }}
                 </h3>
                 <p style="color: var(--gray); line-height: 1.8;">
@@ -79,21 +79,21 @@
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
             <div style="text-align: center;">
                 <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(201,168,76,.2), rgba(201,168,76,.1)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
-                    <i class="bi bi-award" style="font-size: 2rem; color: var(--gold);"></i>
+                    <i class="fas fa-award" style="font-size: 2rem; color: var(--gold);"></i>
                 </div>
                 <h3 style="color: var(--navy); font-weight: 700; margin-bottom: 0.5rem;">{{ __('site.quality') }}</h3>
                 <p style="color: var(--gray); font-size: .9rem;">{{ __('site.quality_detail') }}</p>
             </div>
             <div style="text-align: center;">
                 <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(201,168,76,.2), rgba(201,168,76,.1)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
-                    <i class="bi bi-globe2" style="font-size: 2rem; color: var(--gold);"></i>
+                    <i class="fas fa-globe" style="font-size: 2rem; color: var(--gold);"></i>
                 </div>
                 <h3 style="color: var(--navy); font-weight: 700; margin-bottom: 0.5rem;">{{ __('site.global') }}</h3>
                 <p style="color: var(--gray); font-size: .9rem;">{{ __('site.global_detail') }}</p>
             </div>
             <div style="text-align: center;">
                 <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(201,168,76,.2), rgba(201,168,76,.1)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
-                    <i class="bi bi-shield-check" style="font-size: 2rem; color: var(--gold);"></i>
+                    <i class="fas fa-shield" style="font-size: 2rem; color: var(--gold);"></i>
                 </div>
                 <h3 style="color: var(--navy); font-weight: 700; margin-bottom: 0.5rem;">{{ __('site.reliable') }}</h3>
                 <p style="color: var(--gray); font-size: .9rem;">{{ __('site.reliable_detail') }}</p>

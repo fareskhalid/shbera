@@ -6,7 +6,7 @@
     <title>@yield('title', __('site.company')) | {{ __('site.tagline') }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
 </head>
@@ -25,14 +25,14 @@
                 <li><a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">{{ __('site.about') }}</a></li>
                 <li><a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">{{ __('site.contact') }}</a></li>
                 @auth
-                <li><a href="{{ route('dashboard.products.index') }}"><i class="bi bi-grid"></i> {{ __('site.dashboard') }}</a></li>
+                <li><a href="{{ route('dashboard.products.index') }}"><i class="fas fa-grip"></i> {{ __('site.dashboard') }}</a></li>
                 @endauth
             </ul>
             <div class="nav-actions">
                 <a href="{{ route('locale', app()->getLocale() === 'ar' ? 'en' : 'ar') }}" class="lang-toggle">
                     {{ __('site.language_' . (app()->getLocale() === 'ar' ? 'en' : 'ar')) }}
                 </a>
-                <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="bi bi-list"></i></button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
             </div>
         </div>
         <div class="mobile-menu" id="mobileMenu">
@@ -63,9 +63,9 @@
             </div>
             <div class="footer-contact">
                 <h4>{{ __('site.contact') }}</h4>
-                <p><i class="bi bi-envelope"></i> <a href="mailto:info@shbera.com" style="color: rgba(255,255,255,.6); text-decoration: none;">info@shbera.com</a></p>
-                <p><i class="bi bi-telephone"></i> 201152525064</p>
-                <p><i class="bi bi-geo-alt"></i> {{ __('site.comp_address') }}</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@shbera.com" style="color: rgba(255,255,255,.6); text-decoration: none;">info@shbera.com</a></p>
+                <p><i class="fas fa-phone"></i> 201152525064</p>
+                <p><i class="fas fa-location-dot"></i> {{ __('site.comp_address') }}</p>
             </div>
         </div>
         <div class="footer-bottom">

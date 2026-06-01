@@ -23,26 +23,19 @@ html[lang="en"] { font-family: var(--font-en); }
 
 .shbera-body { background: var(--white); color: var(--navy); }
 
-/* ====== BOOTSTRAP ICONS ====== */
-i.bi {
+/* ====== FONT AWESOME ICONS ====== */
+i.fas, i.fab, i.far {
     display: inline-block;
     font-style: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: inherit;
-    color: currentColor;
-}
-
-i.bi::before {
-    display: inline-block;
+    vertical-align: -0.125em;
+    margin-right: 0.25rem;
 }
 
 /* Icon sizing utilities */
-i.bi.text-lg { font-size: 1.125rem; }
-i.bi.text-xl { font-size: 1.25rem; }
-i.bi.text-2xl { font-size: 1.5rem; }
-i.bi.text-3xl { font-size: 1.875rem; }
+i.fas.text-lg, i.fab.text-lg, i.far.text-lg { font-size: 1.125rem; }
+i.fas.text-xl, i.fab.text-xl, i.far.text-xl { font-size: 1.25rem; }
+i.fas.text-2xl, i.fab.text-2xl, i.far.text-2xl { font-size: 1.5rem; }
+i.fas.text-3xl, i.fab.text-3xl, i.far.text-3xl { font-size: 1.875rem; }
 
 /* ====== NAVBAR ====== */
 .shbera-nav {

@@ -38,16 +38,16 @@
             <div class="product-detail-info">
                 <h2>{{ $product->name }}</h2>
                 <div class="product-description">
-                    <p>{{ Str::limit($product->description, 150) }}@if(Str::length($product->description) > 150)...@endif</p>
+                    <p class="text-gray-700 text-lg leading-relaxed tracking-wide space-y-4 break-words hyphens-auto">{{ $product->description }}</p>
                 </div>
 
                 <div class="product-actions">
                     <button @click="showModal = true" type="button" class="inline-flex items-center gap-2 px-8 py-3 bg-yellow-600 text-white font-bold rounded hover:bg-yellow-500 transition-all duration-200 transform hover:-translate-y-1">
-                        <i class="bi bi-cart-plus"></i>
+                        <i class="fas fa-cart-plus"></i>
                         {{ __('site.order_product') }}
                     </button>
                     <a href="{{ route('products') }}" class="inline-flex items-center gap-2 px-8 py-3 bg-transparent border-2 border-yellow-600 text-yellow-600 font-bold rounded transition-all duration-200 transform hover:-translate-y-1">
-                        <i class="bi bi-arrow-left"></i>
+                        <i class="fas fa-arrow-left"></i>
                         {{ __('site.back_to_products') }}
                     </a>
                 </div>
