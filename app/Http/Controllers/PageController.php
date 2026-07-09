@@ -14,11 +14,11 @@ class PageController extends Controller
 {
     public function home()
     {
-        $featuredProducts = Product::where('is_active', true)
+        $products = Product::where('is_active', true)
             ->orderBy('sort_order')
-            ->take(3)
             ->get();
-        return view('home', compact('featuredProducts'));
+
+        return view('home', compact('products'));
     }
 
     public function products()

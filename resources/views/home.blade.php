@@ -17,15 +17,15 @@
     <div class="hero-scroll"><i class="fas fa-chevron-down"></i></div>
 </section>
 
-{{-- FEATURED PRODUCTS --}}
-@if($featuredProducts->count())
+{{-- PRODUCTS --}}
+@if($products->count())
 <section class="section-products">
     <div class="section-header">
         <span class="section-tag">{{ __('site.products') }}</span>
-        <h2>{{ __('site.featured_products') }}</h2>
+        <h2>{{ __('site.products') }}</h2>
     </div>
     <div class="products-grid">
-        @foreach($featuredProducts as $product)
+        @foreach($products as $product)
         <div class="product-card">
             <div class="product-img">
                 <img src="{{ $product->thumbnail_url }}" alt="{{ $product->name }}">
@@ -43,9 +43,6 @@
             </div>
         </div>
         @endforeach
-    </div>
-    <div class="section-cta">
-        <a href="{{ route('products') }}" class="btn-primary">{{ __('site.all_products') }} →</a>
     </div>
 </section>
 @endif
