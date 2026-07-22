@@ -54,6 +54,7 @@
                 <img src="/images/logo.png" alt="{{ __('site.company') }}" style="height: 50px; width: auto; margin-bottom: 0.5rem;">
                 <span class="logo-text">{{ __('site.company') }}</span>
                 <p>{{ __('site.tagline') }}</p>
+                <p>{{ __('site.tax_registration') }}: <bdi>{{ __('site.tax_registration_number') }}</bdi></p>
             </div>
             <div class="footer-links">
                 <h4>{{ __('site.quick_links') }}</h4>

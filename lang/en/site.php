@@ -22,6 +22,9 @@ return [
     'reliable_desc' => 'Long-term partnerships built on trust and professionalism',
     'quick_links'   => 'Quick Links',
 
+    'tax_registration' => 'Tax Registration Number',
+    'tax_registration_number' => '624-018-083',
+
     // About Us Page
     'about_heading' => 'About Us — A Global Leader in Chemical & Petrochemical Exports',
     'about_intro_1' => 'With over 15 years of industry expertise, Shbera has established itself as a trusted partner in the chemical and petrochemical export business. We pride ourselves on delivering premium-quality materials to clients across more than 30 countries worldwide.',
