@@ -24,6 +24,8 @@ return [
 
     'tax_registration' => 'Tax Registration Number',
     'tax_registration_number' => '624-018-083',
+    'commercial_registration' => 'Commercial Registration Number',
+    'commercial_registration_number' => '100245',
 
     // About Us Page
     'about_heading' => 'About Us — A Global Leader in Chemical & Petrochemical Exports',

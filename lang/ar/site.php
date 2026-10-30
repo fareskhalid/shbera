@@ -24,6 +24,8 @@ return [
 
     'tax_registration' => 'رقم التسجيل الضريبي',
     'tax_registration_number' => '624-018-083',
+    'commercial_registration' => 'رقم السجل التجاري',
+    'commercial_registration_number' => '100245',
 
     // About Us Page
     'about_heading' => 'من نحن — روّاد عالميون في تصدير المواد الكيماوية والبتروكيماوية',
