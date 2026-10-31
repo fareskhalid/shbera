@@ -65,8 +65,8 @@
             </div>
             <div class="footer-contact">
                 <h4>{{ __('site.contact') }}</h4>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:info@shbera.com" style="color: rgba(255,255,255,.6); text-decoration: none;">info@shbera.com</a></p>
-                <p><i class="fas fa-phone"></i> 201152525064</p>
+                <p><i class="fas fa-envelope"></i> <a target="_blank" href="mailto:info@shbera.com" style="color: rgba(255,255,255,.6); text-decoration: none;">info@shbera.com</a></p>
+                <p><i class="fas fa-phone"></i> <a target="_blank" href="https://wa.me/+201152525064" style="color: rgba(255,255,255,.6); text-decoration: none;">201152525064</a></p>
                 <p><i class="fas fa-location-dot"></i> {{ __('site.comp_address') }}</p>
             </div>
         </div>
