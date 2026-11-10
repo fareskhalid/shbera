@@ -1,7 +1,7 @@
 <?php
 return [
     'company'       => 'Shbera',
-    'comp_address'  => 'El Tagamoa El Awwal, New Cairo, Egypt',
+    'comp_address'  => '74 El-Nozha Street, Heliopolis, Egypt',
     'tagline'       => 'Chemical & Petrochemical Export Leaders',
     'hero_title'    => 'Exporting World-Class Quality',
     'hero_sub'      => 'Shbera — Your trusted partner in chemical and petrochemical materials',
@@ -66,7 +66,7 @@ return [
     'form_email_invalid' => 'Please enter a valid email address',
     'form_subject_required' => 'Subject is required',
     'form_message_required' => 'Message is required',
-    'cairo_egypt' => 'El Tagamoa El Awwal, New Cairo, Egypt',
+    'cairo_egypt' => '74 El-Nozha Street, Heliopolis, Egypt',
 
     // Contact Form Submission
     'message_sent_success' => 'Thank you for your message! We\'ll get back to you shortly.',
